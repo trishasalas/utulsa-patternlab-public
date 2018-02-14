@@ -1,0 +1,30 @@
+<div class="faculty-meta" itemtype="http://schema.org/Person">
+  <div class="name">
+    <span itemprop="givenName">{{ profilemeta.name.given }}</span>
+    <span itemprop="familyName">{{ profilemeta.name.family }}</span>
+    <span class="honorificSuffix">{{ profilemeta.name.suffix }}</span>
+  </div>
+  <div itemprop="jobTitle" class="title">
+    {{ profilemeta.jobTitle }}
+  </div>
+  <div class="college-department">
+    <span class="college">
+            {{ profilemeta.college.college }}
+        </span>
+    <span class="department">
+            {{ profilemeta.college.department }}
+        </span>
+  </div>
+  <div class="contact-info">
+    <span itemprop="email" class="email">{{ profilemeta.email }}</span>
+    <span itemprop="telephone" class="telephone">{{ profilemeta.telephone }}</span>
+  </div>
+  <div class="education">
+    <h4 class="education-heading">Education</h4>
+    <div itemprop="alumniOf" class="alumni-of">
+      <span>{{ profilemeta.alumniOf.first }}</span>
+      <span>{{ profilemeta.alumniOf.second }}</span>
+      <span>{{ profilemeta.alumniOf.third }}</span>
+    </div>
+  </div>
+</div>

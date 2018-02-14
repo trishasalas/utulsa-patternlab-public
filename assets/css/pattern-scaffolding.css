@@ -1,0 +1,56 @@
+/**
+ * This stylesheet is for styles you want to include only when displaying demo
+ * styles for grids, animations, color swatches, etc.
+ * These styles will not be your production CSS.
+ * @TODO remove this partial from the main styles output.
+ */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+#sg-patterns {
+	font-family: "Roboto", sans-serif;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	max-width: 100%;
+	padding: 0 0.5em;
+}
+
+	.sg-colors {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-gap: 10px;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.sg-swatch {
+		border: 1px solid #ddd;
+		display: block;
+		min-height: 4em;
+		margin-bottom: 0.3em;
+	}
+
+	.light {
+		color: #fff;
+	}
+
+	.dark {
+		color: #000;
+	}
+
+	.sg-label {
+		font-family: 'Roboto', sans-serif;
+		margin: 0.5em;
+	}
+
+	.sg-pattern-desc > p,
+	.sg-pattern-category-body > p {
+		font-size: 1rem;
+		font-family: 'Roboto', sans-serif;
+		line-height: 1.4;
+	}
+
+    .sg-pattern-example .logo__standard,
+    .sg-pattern-example .logo__strong-horizontal {
+        background-color: #004282;
+    }
